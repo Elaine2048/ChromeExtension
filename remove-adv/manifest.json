@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "百度搜索广告移除器",
+  "version": "1.0",
+  "description": "自动移除百度搜索结果中的广告内容",
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.baidu.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+} 
